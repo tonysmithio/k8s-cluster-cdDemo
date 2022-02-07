@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: websvr-ingressroute
+  namespace: websvr
+spec:
+  entryPoints:
+  - web
+  routes:
+  - kind: Rule
+    match: Host(`websvr.app.home.tonysmith.io`)
+    services:
+    - name: websvr-svc
+      kind: Service
+      port: 80
