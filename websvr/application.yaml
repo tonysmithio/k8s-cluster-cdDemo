@@ -1,0 +1,9 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: websvr-app
+  namespace: websvr
+spec:
+  project: default
+  source:
+    repoURL: 
