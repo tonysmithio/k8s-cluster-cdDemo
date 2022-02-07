@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/tonysmithio/k8s-cluster-cdDemo.git
     targetRevision: HEAD
-    path: websvr
+    path: websvr-app/manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: websvr
